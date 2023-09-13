@@ -39,7 +39,7 @@ To start working on a new feature, you need to create a feature branch from deve
 git flow feature start <name>
 ```
 
-This will create a branch called feature/<name> and switch to it.
+This will create a branch called feature/name and switch to it.
 
 ### Finish a feature branch
 
@@ -49,7 +49,7 @@ When you are done with your feature, you need to merge it back into develop and 
 git flow feature finish <name>
 ```
 
-This will merge feature/<name> into develop, switch to develop, and delete feature/<name>.
+This will merge feature/name into develop, switch to develop, and delete feature/name.
 
 ### Start a release branch
 
@@ -59,7 +59,7 @@ When you are ready to prepare a new release, you need to create a release branch
 git flow release start <version>
 ```
 
-This will create a branch called release/<version> and switch to it.
+This will create a branch called release/version and switch to it.
 
 ### Finish a release branch
 
@@ -69,7 +69,7 @@ When you have finished testing and fixing your release, you need to merge it int
 git flow release finish <version>
 ```
 
-This will merge release/<version> into master and develop, switch to master, tag it with <version>, switch back to develop, and delete release/<version>.
+This will merge release/version into master and develop, switch to master, tag it with <version>, switch back to develop, and delete release/version.
 
 ### Start a hotfix branch
 
@@ -79,7 +79,7 @@ When you need to fix a critical bug in production, you need to create a hotfix b
 git flow hotfix start <version>
 ```
 
-This will create a branch called hotfix/<version> and switch to it.
+This will create a branch called hotfix/version and switch to it.
 
 ### Finish a hotfix branch
 
@@ -89,7 +89,7 @@ When you have fixed the bug, you need to merge it into master and develop and ta
 git flow hotfix finish <version>
 ```
 
-This will merge hotfix/<version> into master and develop, switch to master, tag it with <version>, switch back to develop, and delete hotfix/<version>.
+This will merge hotfix/version into master and develop, switch to master, tag it with <version>, switch back to develop, and delete hotfix/version.
 
 ### Start a support branch
 
@@ -99,7 +99,7 @@ When you need to provide long-term support for an older version of your software
 git flow support start <version>
 ```
 
-This will create a branch called support/<version> and switch to it.
+This will create a branch called support/version and switch to it.
 
 ### Finish a support branch
 
@@ -109,4 +109,4 @@ When you no longer need to support an older version of your software, you can de
 git flow support finish <version>
 ```
 
-This will delete support/ <version>.
+This will delete support/version.
