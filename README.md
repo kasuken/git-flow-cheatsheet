@@ -109,4 +109,4 @@ When you no longer need to support an older version of your software, you can de
 git flow support finish <version>
 ```
 
-This will delete support/<version>.
+This will delete support/ <version>.
