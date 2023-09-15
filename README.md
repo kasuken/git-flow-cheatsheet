@@ -15,7 +15,6 @@ In addition to these two main branches, GitFlow uses four types of supporting br
 - **feature**: These branches are created from develop and merged back into develop when a feature is completed. They are used to implement new functionality or enhancements. They have names like feature/xxx, where xxx is a descriptive name of the feature.
 - **release**: These branches are created from develop and merged into master and develop when a release is ready to be deployed. They are used to prepare the code for production, such as fixing bugs, updating documentation, and changing configuration. They have names like release/x.y.z, where x.y.z is the version number of the release.
 - **hotfix**: These branches are created from master and merged into master and develop when a critical bug needs to be fixed in production. They are used to patch the code without affecting the ongoing development. They have names like hotfix/x.y.z, where x.y.z is the version number of the hotfix.
-- **support**: These branches are created from master and used to provide long-term support for older versions of the software. They are updated by merging hotfixes into them. They have names like support/x.y, where x.y is the major and minor version number of the supported version.
 
 ## Commands
 
@@ -90,23 +89,3 @@ git flow hotfix finish <version>
 ```
 
 This will merge hotfix/version into master and develop, switch to master, tag it with <version>, switch back to develop, and delete hotfix/version.
-
-### Start a support branch
-
-When you need to provide long-term support for an older version of your software, you need to create a support branch from master.
-
-```bash
-git flow support start <version>
-```
-
-This will create a branch called support/version and switch to it.
-
-### Finish a support branch
-
-When you no longer need to support an older version of your software, you can delete the support branch.
-
-```bash
-git flow support finish <version>
-```
-
-This will delete support/version.
