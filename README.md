@@ -70,6 +70,12 @@ git flow release finish <version>
 
 This will merge release/version into master and develop, switch to master, tag it with <version>, switch back to develop, and delete release/version.
 
+**Important**: if you want to tag the release directly from the command, add the parameter -m at the end of the command.
+
+```bash
+git flow release finish <version> -m <yourtag>
+```
+
 ### Start a hotfix branch
 
 When you need to fix a critical bug in production, you need to create a hotfix branch from master.
